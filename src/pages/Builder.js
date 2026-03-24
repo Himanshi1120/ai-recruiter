@@ -4,33 +4,32 @@ import { useNavigate } from "react-router-dom";
 export default function Builder() {
   const [input, setInput] = useState("");
   const [response, setResponse] = useState(null);
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    let data = {};
-
-    if (input.toLowerCase().includes("website")) {
-      data = {
-        role: "Frontend Developer",
-        project: "Website Project",
-        skills: ["HTML", "CSS", "JavaScript"],
-        summary: "Built responsive websites using modern web technologies."
-      };
-    } else if (input.toLowerCase().includes("app")) {
-      data = {
-        role: "App Developer",
-        project: "Mobile App",
-        skills: ["React Native", "API", "UI Design"],
-        summary: "Developed mobile apps with user-friendly interfaces."
-      };
-    } else {
-      data = {
-        role: "Developer",
-        project: input,
-        skills: ["Problem Solving"],
-        summary: "Passionate developer eager to learn."
-      };
+    if (!input.trim()) {
+      setError("Please enter your experience first");
+      setResponse(null);
+      return;
     }
+
+    setError("");
+
+    const words = input.split(" ");
+
+    const skills = words
+      .filter(word => word.length > 3)
+      .slice(0, 5);
+
+    const data = {
+      role: input.toLowerCase().includes("react")
+        ? "Frontend Developer"
+        : "Developer",
+      project: input,
+      skills: skills,
+      summary: input
+    };
 
     setResponse(data);
   };
@@ -42,16 +41,18 @@ export default function Builder() {
 
         <input
           type="text"
-          placeholder="Tell me about your experience..."
+          placeholder="Describe your experience..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
+
+        {error && <p style={{ color: "red" }}>{error}</p>}
 
         <button onClick={handleSubmit}>Generate</button>
 
         {response && (
           <div className="output">
-            <h3>AI Generated</h3>
+            <h3>Generated Profile</h3>
             <p><b>Role:</b> {response.role}</p>
             <p><b>Project:</b> {response.project}</p>
             <p><b>Skills:</b> {response.skills.join(", ")}</p>

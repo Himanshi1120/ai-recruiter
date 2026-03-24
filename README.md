@@ -55,12 +55,8 @@ npm start
 
 ---
 
-## Demo Login
 
-Email: hire-me@anshumat.org  
-Password: HireMe@2025!  
 
----
 
 ## Approach
 
