@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# AI Recruiter – Assignment Submission
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Problem Understanding
 
-## Available Scripts
+Traditional hiring systems rely on resume uploads, which create several issues:
 
-In the project directory, you can run:
+- Information is unstructured and inconsistent  
+- Difficult for recruiters to compare candidates  
+- Resume parsing errors  
+- Bias based on formatting and presentation  
+- Time-consuming screening process  
+- Not suitable for freshers  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Solution
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project replaces resume uploads with a structured profile-building system.
 
-### `npm test`
+Instead of uploading a resume, candidates provide their experience in natural language. The system converts this into structured data such as role, skills, and summary.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This makes candidate evaluation more consistent and easier for recruiters.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Core Idea
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Candidates do not upload resumes.  
+They provide input, and the system builds a structured professional profile.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Input-based profile creation  
+- Structured output (role, skills, project)  
+- Simple skill extraction  
+- Generated summary  
+- Profile view page  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React.js  
+- JavaScript  
+- React Router  
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to Run
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install  
+npm start  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Demo Login
 
-### Analyzing the Bundle Size
+Email: hire-me@anshumat.org  
+Password: HireMe@2025!  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Approach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The goal was to replace resume-based hiring with structured input.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A working prototype was created to show how user input can be converted into a consistent profile format for easier evaluation.
