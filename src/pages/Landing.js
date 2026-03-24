@@ -9,7 +9,7 @@ export default function Landing() {
         <h1>AI Recruiter</h1>
         <p>Build your profile with AI</p>
 
-        <button onClick={() => navigate("/builder")}>
+        <button onClick={() => navigate("/login")}>
           Get Started
         </button>
       </div>

@@ -1,65 +1,103 @@
 # AI Recruiter – Assignment Submission
 
-## Problem Understanding
+## Overview
 
-Traditional hiring systems rely on resume uploads, which create several issues:
+This project is a simple recruitment platform prototype that replaces traditional resume uploads with structured input.
 
-- Information is unstructured and inconsistent  
-- Difficult for recruiters to compare candidates  
-- Resume parsing errors  
-- Bias based on formatting and presentation  
-- Time-consuming screening process  
-- Not suitable for freshers  
+Instead of uploading resumes, candidates describe their experience in natural language. The system processes this input and generates a structured profile including role, skills, and summary.
+
+---
+
+## Problem Statement
+
+Traditional hiring systems rely heavily on resumes, which creates several issues:
+
+* Unstructured and inconsistent data
+* Difficult comparison between candidates
+* Resume parsing errors
+* Bias due to formatting and design
+* Time-consuming screening process
 
 ---
 
 ## Solution
 
-This project replaces resume uploads with a structured profile-building system.
+This project provides an alternative approach where:
 
-Instead of uploading a resume, candidates provide their experience in natural language. The system converts this into structured data such as role, skills, and summary.
-
-This makes candidate evaluation more consistent and easier for recruiters.
-
----
-
-## Core Idea
-
-Candidates do not upload resumes.  
-They provide input, and the system builds a structured professional profile.
+* Candidates enter their experience in plain text
+* The system converts input into structured information
+* Recruiters can easily review standardized profiles
 
 ---
 
 ## Features
 
-- Input-based profile creation  
-- Structured output (role, skills, project)  
-- Simple skill extraction  
-- Generated summary  
-- Profile view page  
+* Simple and clean user interface
+* Demo login system for evaluation
+* Input-based profile generation
+* Dynamic skill extraction from user input
+* Structured output (role, skills, summary)
+* Profile view page
+* Input validation for better user experience
+
+---
+
+## Application Flow
+
+Landing Page → Login → Profile Builder → Profile View
+
+---
+
+## Demo Login
+
+Email: [hire-me@anshumat.org](mailto:hire-me@anshumat.org)
+Password: HireMe@2025!
+
+Use these credentials to access the application.
 
 ---
 
 ## Tech Stack
 
-- React.js  
-- JavaScript  
-- React Router  
+* React.js
+* JavaScript
+* React Router
+* CSS
 
 ---
 
 ## How to Run
 
-npm install  
-npm start  
+1. Clone the repository
+
+2. Install dependencies:
+
+   npm install
+
+3. Start the application:
+
+   npm start
 
 ---
 
-
-
-
 ## Approach
 
-The goal was to replace resume-based hiring with structured input.
+The main idea was to remove dependency on resumes and create a structured way of capturing candidate information.
 
-A working prototype was created to show how user input can be converted into a consistent profile format for easier evaluation.
+The system takes user input and processes it to generate a consistent format, making it easier for recruiters to evaluate candidates.
+
+---
+
+## Notes
+
+* This is a frontend prototype and does not include backend authentication
+* The login system is implemented for demonstration purposes only
+* The focus is on improving candidate data structure and usability
+
+---
+
+## Conclusion
+
+This project demonstrates a simple and effective approach to modernizing recruitment by replacing resumes with structured input.
+
+It highlights how even basic input processing can improve clarity and consistency in candidate evaluation.

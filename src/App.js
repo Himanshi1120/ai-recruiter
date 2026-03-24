@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
+import Login from "./pages/Login";
 import Builder from "./pages/Builder";
 import Profile from "./pages/Profile";
 
@@ -8,6 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/builder" element={<Builder />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
